@@ -12,5 +12,9 @@ public class Hello {
 
          System.out.println("Edit Java Code!!");
 
+         long a;
+         double b = 3.14f;
+
+
      }
 }

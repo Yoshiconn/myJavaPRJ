@@ -6,7 +6,7 @@ public class Ex03_09 {
         b = a + 100;
         c = a + b - 100;
         d = a + b + c;
-        System.out.printf("a, b , c , d,의 값 ==> %d , %d , %d , %d \n", a, b, c, d);
+        System.out.printf("a , b , c , d,의 값 ==> %d , %d , %d , %d \n", a, b, c, d);
 
         a = b = c = d = 100;
         System.out.printf("a, b , c , d 의 값 ==> %d , %d , %d , %d \n", a, b, c, d);
