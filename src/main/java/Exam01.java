@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 public class Exam01 {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a;
+        a = sc.nextInt();
 
-        System.out.println("양주홍");
-        System.out.println("Yoshicon0630@gmail.com");
-        System.out.println("1999/06/30");
-        System.out.println("화성시 거주중");
+        System.out.println(a);
+
     }
 }
