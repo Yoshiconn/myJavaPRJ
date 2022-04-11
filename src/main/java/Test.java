@@ -7,9 +7,12 @@ public class Test {
 
         a = sc.nextInt();
 
-        for(int i = 0; i <= a; i++){
-            b += i;
+        for(int i = 1; i < a+1; i++){
+            System.out.printf("*");
+            for(int n = 1; n < a; n++){
+                System.out.printf("*");
+            }
+            System.out.println();
         }
-        System.out.printf("%d", b);
     }
 }
