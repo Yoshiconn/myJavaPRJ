@@ -1,23 +1,21 @@
-import java.util.Scanner;
-
 public class Note {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in); //줄을 찍고
-        int a = s.nextInt(); //외부조건
-        int b = a;
-
-        for (int i = 0; i < (a*2)-1; i++) {
-            for ( int j = 0; j < b*2; j++) {
-                if (j <= i) {
-                    System.out.print("*");
-                    System.out.print(j);
+            int i, j, k;
+            k = 3;
+            for (i = 1; i <= 5; i++) {//1~5까지
+                for (j = 1; j <= 5; j++) {
+                    if (j < k) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+                if (j < k) {
+                    k--;
                 } else {
-                    System.out.print(" ");
+                    k++;
                 }
             }
-            System.out.println();
-            b--;
-            System.out.print(b);
         }
     }
-}
