@@ -28,7 +28,5 @@ public class butterfly1 {
             }
             System.out.println();
         }
-
     }
-
 }
