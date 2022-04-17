@@ -1,8 +1,8 @@
 public class arr7 {
     public static void main(String[] args) {
 
-        int[] arr = {1,1,3,4,5,5,4,3,4};
-        int[] result = new int [9];
+        int[] arr = {1,1,3,4,5,5,4,3,4,10,11};
+        int[] result = new int [12];
 
         for (int i = 0; i<arr.length; i++) {
 
