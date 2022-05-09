@@ -1,15 +1,16 @@
 import java.util.Scanner;
 
 public class sadsadas {
-    public static void maim(String[] args){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int hpa = 0;
         int i = 1;
-        int a = sc.nextInt();
+        int[] aa = new int[10];
 
         while (i < 10) {
-            hpa = a*i;
-            System.out.printf("%d * %d = %d \n", a,i,hpa);
+            aa[i] = sc.nextInt();
+            hpa = aa[i]*i;
+            System.out.printf("%d * %d = %d \n", aa[i],i,hpa);
             i++;
         }
     }
