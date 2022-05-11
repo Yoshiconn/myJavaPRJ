@@ -1,21 +1,26 @@
 public class Note {
     public static void main(String[] args) {
-        int i, j, k;
-        k = 1;
-        for (i = 0; i <= 5; i++) {//1~5까지
-            for (j = 1; j < 6; j++) {
-                if (j < k) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
+        int space = 2;
+        int a = 1;
+        int flag = 0;
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= a; j++) {
+                System.out.print("*");
+            }
+            if (flag == 0) {
+                space--;
+                a += 2;
+            } else {
+                space++;
+                a -= 2;
+            }
+            if (space == 0) {
+                flag = 1;
             }
             System.out.println();
-            if (j < k) {
-                k--;
-            } else {
-                k++;
-            }
         }
     }
 }
