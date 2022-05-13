@@ -9,12 +9,12 @@ public class ex0513 {
         int a = sc.nextInt();
 
         int[] arr = new int[a];
-        int sub = 1;
+        int count = 1;
 
         for(int i = 0; i<a; i++){
-            System.out.printf("%d 번째의 과목 점수를 입력하세요. : ", sub);
+            System.out.printf("%d 번째의 과목 점수를 입력하세요. : ", count);
             arr[i] = sc.nextInt();
-            sub ++;
+            count ++;
 
             sum += arr[i];
         }
