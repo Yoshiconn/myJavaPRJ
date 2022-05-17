@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class arr6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
         int[] arr = new int[8];
 
         for (int i = 0; i < arr.length; i++) {
