@@ -10,6 +10,8 @@ public class ex_0524 {
             arr[i] = sc.nextInt();
         }
         int num = sc.nextInt();
+
         System.out.println(arr[num]);
+
     }
 }
