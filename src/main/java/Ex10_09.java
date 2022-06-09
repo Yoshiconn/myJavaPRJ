@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 public class Ex10_09 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception { // 문단 전체에 오류 체크를 할때는 여기에 throws 를 사용
 
         FileInputStream fis = new FileInputStream("/test/data1.txt"); // 디폴트가 c 드라이브라 생략 해도됨 왠만하면 이렇게 쓸것
         // 왜냐면 우분투나 이런거는 경로가 c로 시작하지 않기 때문에 그럼.

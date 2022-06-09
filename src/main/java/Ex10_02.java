@@ -19,7 +19,7 @@ public class Ex10_02 {
             System.out.println("모든 에러를 잡음");
             System.out.println("에러 메시지 : " + e);
 
-        } finally {
+        } finally { // 메모리를 회수 해주는 로직임 필수는 아니나 무조건 사용하는 버릇을 들이자!
             System.out.println("이 부분은 에러 여부에 상관없이 무조건 실행됨!");
         }
     }
