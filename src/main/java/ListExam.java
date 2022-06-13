@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListExam {
@@ -9,10 +10,10 @@ public class ListExam {
         // List 객체에 데이터 추가하기
         list.add("ㄱㄱㄱ");
         list.add("ㄴㄴㄴ");
-        list.add("ㄷaㄷ");
-        list.add("ㄷsㄷ");
-        list.add("ㄷdㄷ");
+        list.add("ㄷㄷㄷ");
         list.add("ㄹㄹㄹ");
+        list.add("ㅁㅁㅁ");
+        list.add("ㅂㅂㅂ");
 
         //List의 데이터 수 구하기
         int listSize = list.size();
@@ -23,5 +24,20 @@ public class ListExam {
         for(int i = 0; i < listSize; i++) { // 구식이고 속도가 느림.
             System.out.println("이름 : " + list.get(i));
         }
+        //  foreach   //   for (String name : list) { // 문법은 다음과 같음
+//            System.out.println("이름 : " + name);
+
+//  람다식  list.forEach(name -> System.out.println("name : " +name));
+        // 람다식 가장 빠르나 비동기식 방식이고 순서가 바뀔수도 있다.
+
+        /* Iterator를 활용한 방법임 -> 옛날에 많이씀*/
+        Iterator<String> it = list.iterator();
+
+        while (it.hasNext()) {
+            String name = it.next();
+            System.out.println("이름 : " + name);
+        }
+
     }
 }
+
