@@ -32,5 +32,6 @@ public class EX12_06 {
 
         System.out.print("승용차 -> ");
         sedan2.upSpeed(200);
+
     }
 }
