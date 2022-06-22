@@ -8,6 +8,7 @@ class Car2 {
 }
 
 class Sedan2 extends Car2 {
+    @Override
     void upSpeed(int speed) {
 
         this.speed += speed;
