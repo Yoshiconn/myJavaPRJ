@@ -2,7 +2,7 @@ public class b15596 {
     public static void main(String[] args) {
 
     }
-    public class Test {
+    public class suum {
         long sum(int[] a) {
             long sum = 0;
 
